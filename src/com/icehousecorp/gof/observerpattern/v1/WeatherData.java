@@ -1,4 +1,4 @@
-package com.icehousecorp.gof.v1;
+package com.icehousecorp.gof.observerpattern.v1;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.icehousecorp.gof.v2;
+package com.icehousecorp.gof.observerpattern.v2;
 
 import java.util.Observable;
 import java.util.Observer;
