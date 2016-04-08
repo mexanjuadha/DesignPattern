@@ -1,7 +1,5 @@
 package com.icehousecorp.gof.observerpattern.v1;
 
-import android.util.Log;
-
 /**
  * Created by mexanjuadha on 1/21/16.
  */
@@ -26,7 +24,7 @@ public class DisplayWeather implements Observer, UserInterface {
 
     @Override
     public void display() {
-        Log.d(TAG, "display: " + mTemperature);
+        System.out.println("display: " + mTemperature);
     }
 
     public void removeFromObserver(){

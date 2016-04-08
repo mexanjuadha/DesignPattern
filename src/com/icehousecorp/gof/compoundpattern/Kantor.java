@@ -26,4 +26,14 @@ public class Kantor implements TukangPotong {
         }
 
     }
+
+    @Override
+    public void registerObserver(Observer observer) {
+
+    }
+
+    @Override
+    public void notifyObservers() {
+
+    }
 }

@@ -29,7 +29,7 @@ public class TukangSimulator {
         PerformancePeople performancePeople = new PerformancePeople();
         kantor.registerObserver(performancePeople);
 
-        simulate(kantor)
+        simulate(kantor);
 
         PerformanceReview.getPerformanceCount();
     }

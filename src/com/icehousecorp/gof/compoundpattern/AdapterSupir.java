@@ -15,4 +15,14 @@ public class AdapterSupir implements TukangPotong {
     public void cukur() {
         supir.setir();
     }
+
+    @Override
+    public void registerObserver(Observer observer) {
+
+    }
+
+    @Override
+    public void notifyObservers() {
+
+    }
 }

@@ -1,6 +1,5 @@
 package com.icehousecorp.gof.statepattern;
 
-import android.util.Log;
 
 /**
  * Created by mexanjuadha on 3/17/16.
@@ -17,30 +16,30 @@ public class HasPin implements ATMState {
 
     @Override
     public void insertCard() {
-        Log.d(TAG, "insertCard: you already inserted card");
+        System.out.println( "insertCard: you already inserted card");
     }
 
     @Override
     public void ejectCard() {
-        Log.d(TAG, "ejectCard: card ejected");
+        System.out.println( "ejectCard: card ejected");
         atmMachine.setAtmState(atmMachine.getNoCard());
     }
 
     @Override
     public void insertPin(int pin) {
-        Log.d(TAG, "insertPin() called with: you already entered pin");
+        System.out.println( "insertPin() called with: you already entered pin");
     }
 
     @Override
     public void requestCash(int cash) {
         if (cash < atmMachine.moneyOnMachine) {
             atmMachine.setMoneyOnMachine(atmMachine.moneyOnMachine - cash);
-            Log.d(TAG, "requestCash: " + cash);
+            System.out.println( "requestCash: " + cash);
             if (atmMachine.moneyOnMachine <= 0) {
                 atmMachine.setAtmState(atmMachine.noCash);
             }
         } else {
-            Log.d(TAG, "requestCash() no money");
+            System.out.println( "requestCash() no money");
             atmMachine.setAtmState(atmMachine.noCash);
 
         }
