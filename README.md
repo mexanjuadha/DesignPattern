@@ -3,7 +3,7 @@ GoF Design Patterns
 
 **Simple implementations of GoF Design Patterns.**
 
-Intention of the current repository is to collect the implementations of 
+Motivation of the current repository is to collect the implementations of 
 the patterns presented in the *Head First Design Patterns* books.
 
 The language is used: *Java*
@@ -13,17 +13,15 @@ List of GoF patterns by types
 
 ### Creational
 
-*Creational patterns are ones that create objects for you, rather than having you instantiate objects directly. 
+*Creational patterns are ones that create objects for you, instead of having you instantiate objects directly. 
 This gives your program more flexibility in deciding which objects need to be created for a given case.*
 
 - [x] **Abstract Factory** groups object factories that have a common theme.
-- [x] **Factory Method** creates objects without specifying the exact class to create.
-- [x] **Prototype** creates objects by cloning an existing object.
+- [x] **Factory Method** creates objects without specifying the exact class and class creator.
 - [x] **Singleton** restricts object creation for a class to only one instance.
 
 ### Structural
 
-*These concern class and object composition. 
 They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.*
 
 - [x] **Adapter** allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
